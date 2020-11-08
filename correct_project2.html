@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>timpass</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0pz;
+    }
+    .navbar{
+        display: flex;
+        background-color: gray;
+        opacity: 0.83;
+        /* position: abosolute; */
+      height: 70px;
+      position: sticky;
+      top: 0px;
+
+    }
+    .navbar ul {
+        display: flex;
+        margin: 23px;
+    }
+
+    .navbar ul li{
+        list-style: none;
+        color: white;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 14px 43px;
+        margin: 53px 53px;
+        columns: white;
+    }
+    .navbar ul li a:hover{
+            background-color:red;
+            border: 2px solid black;
+            border-radius: 10px;
+    }
+   .navbar img{
+       margin:3px 23px;
+    width: 69px;
+    height: 69px;
+   }
+    #home{
+        /* background: url('berry.jpg'); */
+        margin: 23px 23px;
+        /* padding: 23px 23px;
+        border: 2px solid black;
+        border-radius: 10px; */
+       
+        height:535px;
+        /* background: url('berry.jpg'); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    #home::before{
+        content: "";
+    position: absolute;
+    background: url('berries-2277_1920.jpg') no-repeat center center/cover;
+    height: 642px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; 
+     opacity:0.83;
+
+    }
+    .btn{
+        font-size: 2rem;
+        background-color: rgb(45, 45, 172);
+        border-radius: 10px;
+        margin: 23px 43px;
+    position: relative;
+    left: 50px;
+    }
+    .btn:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+   #sevices-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+    .sevices{
+        display: flex;
+        margin: 23px;
+
+     
+   }
+    .sevices .s{
+        border: 2px solid blue;
+        border-radius: 10px;
+        margin:23px;
+        padding: 23px;
+
+    }
+    h1{
+        font-size: 4rem;
+        margin: 23px 253px;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding: 43px 23px; */
+        /* border: 2px solid red; */
+       
+        /* position: relative; */
+      
+        /* flex-direction:row; */
+    }
+    #clients::before{
+        content: "";
+ position: absolute;
+ background: url('blueberries.jpg');
+ width: 100vw;
+ left: 0px;
+ height: 414px;
+ z-index: -1;
+ opacity: 0.3;
+    }
+    .client-container{
+        display: flex;
+    }
+    .c-image img{
+        width: 100px;
+        height: 100px;
+        margin: 72px 23px;
+        padding: 23px 63px;
+    }
+    .form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+    }
+    .form::before{
+        content: "";
+        background: url('colorpop.jpg');
+        position: absolute;
+        width: 100%;
+        height: 787px;:
+        z-index: -1;
+        opacity: .58;
+        left: 0;
+        
+    }
+   input{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+        margin:1px 23px;
+    padding: 8px 23px;
+        /* background-color: gray; */
+    }
+    textarea{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%; 
+         margin: -2px 23px;
+    padding: 17px 23px;
+    }
+
+    .copy{
+        /* border: 2px solid green; */
+/* background-color: black; */
+/* color: white; */
+/* wi/dth: 100v */
+/* padding: 0px 300px; */
+        font-size: 2rem;
+        position: relative;
+        /* bottom: 0px; */
+        top: 47px;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    #heading{
+        color: rgb(122, 248, 19);
+    }
+    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="image">
+            <img src="logo.png" alt="" >
+        </div>
+<ul>
+    <li class="item"><a href="$">Home</a></li>
+    <li class="item"><a href="$">services</a></li>
+    <li class="item"><a href="$">about us</a></li>
+    <li class="item"><a href="$">contact us</a></li>
+    </ul>
+    </nav>
+    <section id="home">
+        <h1 id="heading">welcome to my website</h1>
+        <p id="heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id architecto accusamus incidunt laudantium laborum minus nesciunt sed in! Sit ab fuga aliquid animi?</p>
+        <button class="btn">order now</button>
+    </section>
+    <section id ="sevices-container">
+        <h1>Our services</h1>
+        <div class="sevices">
+        <div class="s">
+            <h2>food ordering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure, accusamus placeat accusantium incidunt quam numquam perferendis natus hic corporis recusandae aspernatur libero? Incidunt, explicabo rerum. Eos illo nobis asperiores!</p>
+        </div>
+        <div class="s">
+            <h2>food delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure, accusamus placeat accusantium incidunt quam numquam perferendis natus hic corporis recusandae aspernatur libero? Incidunt, explicabo rerum. Eos illo nobis asperiores!</p>
+        </div>
+        <div class="s">
+            <h2>food complain</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure, accusamus placeat accusantium incidunt quam numquam perferendis natus hic corporis recusandae aspernatur libero? Incidunt, explicabo rerum. Eos illo nobis asperiores!</p>
+        </div>
+    </div>
+  
+<section id="clients">
+    <div>
+    <h1>Our clients</h1>
+</div>
+    <div class="client-container">
+<div class="c-image">
+    <img src="logo1.png" alt="apple">
+</div>
+<div class="c-image">
+    <img src="logo3.png" alt="microsoft">
+</div>
+<div class="c-image">
+    <img src="logo2.png" alt="skype">
+</div>
+<div class="c-image">
+    <img src="logo4.png" alt="starbucks">
+</div>
+</div>
+
+
+</section>
+<section class="form">
+    <h1>details</h1>
+    <form action="/" ,method="POST">
+<label for="name">Name:</label>
+<br>
+<input type="text" name="name" id="" placeholder="enter your name">
+<br>
+<label for="email">Email:</label>
+<br>
+<input type="email" name="name" id="" placeholder="enter your email">
+<br>
+<label for="phone">Number:</label>
+<br>
+<input type="text" name="name" id="" placeholder="enter your number" >
+<br>
+<label for="message">Write about you:</label>
+<br>
+<textarea name="message" id="" cols="30" rows="10" placeholder="enter about yourself"></textarea>
+<button class="btn">submit</button>
+</form>
+
+
+
+
+</section>
+<footer>
+
+    <div class="copy">
+        Copyright &copy; wwww.mymealonline.com has all rights reserved .2020 
+    </div>
+</footer>
+</body>
+</html>
